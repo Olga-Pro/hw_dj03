@@ -1,0 +1,23 @@
+{% extends 'main/layoute.html' %}
+
+{% block title %}
+    <title>Урок номер 2 по django</title>
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Добро пожаловать на наш сайт {{ caption }}!</h1>
+    <p class="lead">Мы рады приветствовать вас на нашем новом веб-сайте, созданном с использованием Django и Bootstrap. Наш сайт предлагает уникальные решения и услуги для вашего бизнеса.</p>
+    <hr class="my-4">
+    <p>Наши ключевые особенности:</p>
+    <ul class="list-group">
+        <li class="list-group-item">Современный и интуитивно понятный дизайн</li>
+        <li class="list-group-item">Высокая производительность и надежность</li>
+        <li class="list-group-item">Адаптивный интерфейс для всех устройств</li>
+        <li class="list-group-item">Интеграция с популярными сервисами и API</li>
+        <li class="list-group-item">Постоянное обновление и улучшение функциональности</li>
+    </ul>
+    <p class="mt-4">Свяжитесь с нами сегодня, чтобы узнать больше о том, как мы можем помочь вам достичь ваших целей!</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Подробнее</a>
+</div>
+{% endblock %}

@@ -7,9 +7,15 @@
 {% block content %}
 <h1>Наши новости</h1>
     {% for new in news %}
-	<div>
-		<h3> {{ new.title }} </h3>
-		<p> {{ new.short_description }} </p>
-	</div>
+	   <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px;">
+        <h2>{{ new.title }}</h2>
+        <p><strong>Автор:</strong> {{ new.user.username }}</p>
+        <p><strong>Дата публикации:</strong> {{ new.pub_date|date:"d M Y, H:i" }}</p>
+        <p><strong>Краткое описание:</strong> {{ new.short_description }}</p>
+        <div style="margin-top: 15px;">
+
+            <p style="font-size: 18px;">{{ new.text }}</p>
+        </div>
+    </div>
     {% endfor %}
 {% endblock %}
